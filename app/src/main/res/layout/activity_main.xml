@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Custom Color Wheel View -->
+    <com.example.exp12.ColorWheelView
+        android:id="@+id/colorWheel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Preview color block -->
+    <View
+        android:id="@+id/previewColor"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF" />
+
+    <!-- Alpha controls -->
+    <TextView
+        android:id="@+id/alphaValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alpha: 255"
+        android:layout_marginTop="16dp" />
+
+    <SeekBar
+        android:id="@+id/alphaSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="255" />
+
+    <!-- Value (brightness) controls -->
+    <TextView
+        android:id="@+id/valueValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value: 100"
+        android:layout_marginTop="16dp" />
+
+    <SeekBar
+        android:id="@+id/valueSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="100" />
+
+</LinearLayout>
